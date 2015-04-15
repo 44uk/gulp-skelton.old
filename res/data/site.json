@@ -1,0 +1,17 @@
+{
+  "title": "title tag text",
+  "meta": {
+    "title": "meta.title",
+    "description": "meta.description",
+    "keywords": "meta.keywords"
+  },
+  "ogp": {
+    "type":  "website",
+    "image": "http://example.com/path/to/image.jpg",
+    "url":   "http://example.com/",
+    "site_name": "ogp.site_name"
+  },
+  "credit": {
+    "copyright": "Copyright example.com, Inc. All rights reserved."
+  }
+}

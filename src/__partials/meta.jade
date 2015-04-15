@@ -1,0 +1,32 @@
+block meta
+
+- if(!meta){ meta = {} }
+- if(!ogp) { ogp = {} }
+
+meta(http-equiv="X-UA-Compatible" content="IE=edge")
+meta(name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1")
+meta(charset="utf-8")
+
+meta(name="robots" content="noydir")
+meta(name="robots" content="noodp")
+meta(name="robots" content="index,follow")
+
+title= meta.title ? meta.title : global.meta.title
+
+meta(name="title"       content="#{meta.title ? meta.title : global.meta.title}")
+meta(name="description" content="#{meta.description ? meta.title : global.meta.description}")
+meta(name="keywords"    content="#{meta.keywords ? meta.title : global.meta.keywords}")
+
+meta(property="og:title"       content="#{meta.title ? meta.title : global.meta.title}")
+meta(property="og:type"        content="#{ogp.type ? ogp.type : global.ogp.type}")
+meta(property="og:url"         content="#{ogp.url ? ogp.url : global.ogp.url}")
+meta(property="og:image"       content="#{ogp.image ? ogp.image : global.ogp.image}")
+meta(property="og:site_name"   content="#{ogp.site_name ? ogp.site_name : global.ogp.site_name}")
+meta(property="og:description" content="#{meta.description ? meta.description : global.meta.description}")
+
+meta(name="twitter:site" content="@twitter_acount")
+meta(name="twitter:card" content="#{meta.description ? meta.title : global.meta.description}")
+
+meta(name="apple-mobile-web-app-title" content="#{meta.title ? meta.title : global.meta.title}")
+link(rel="apple-touch-icon" href="/path/to/apple-touch-icon.png")
+link(rel="shortcut icon" href="/path/to/favicon.ico" type="image/x-icon")
